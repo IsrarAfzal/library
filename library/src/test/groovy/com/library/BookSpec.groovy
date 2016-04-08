@@ -15,8 +15,23 @@ class BookSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "toString"() {
+when:"A book has title, author, isbn, dateBorrowed, dateReturned, student"
+
+def book=new Book(title:'The Willow and The Wisp',
+
+			author:'Patrick Rothfuss',
+
+			isbn:'786542',
+
+			dateBorrowed:'09/10/2015',
+
+			dateReturned:'12/11/2015',
+
+			student:'Jessica Jones')
+
+then:"toString method will merge them."
+
+book.toString()=='The Willow and The Wisp,Patrick Rothfuss,786542,09/10/2015,12/11/2015,Jessica Jones'
     }
 }

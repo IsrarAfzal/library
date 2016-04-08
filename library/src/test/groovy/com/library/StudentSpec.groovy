@@ -16,7 +16,18 @@ class StudentSpec extends Specification {
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+when:"A name, email, studentid, course"
+
+def student=new Student(name:'Saiba Javed',
+
+			email:'s-j-crazy@yahoo.com',
+
+			studentid:'06sjaved',
+
+			course:'Hotel Management')
+
+then:"The toString method will merge them together."
+
+student.toString()=='Saiba Javed,s-j-crazy@yahoo.com,06sjaved,Hotel Management'
     }
 }
