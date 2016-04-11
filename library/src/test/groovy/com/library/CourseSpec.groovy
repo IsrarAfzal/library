@@ -26,7 +26,7 @@ def course=new Course(title:'Computer Engineering',
 
 			department:'Computing',
 
-			description:'Studying Code and writing it')
+			description:'Studying Code and writing it').save()
 
 then:"The toString method will merge them together."
 

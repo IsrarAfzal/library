@@ -16,7 +16,7 @@ String student
 
 String toString(){
 
-"$title,$author,$isbn,$dateBorrowed,$dateReturned,$student"
+"$title,$author,$isbn,$student"
 }
 
     static constraints = {
