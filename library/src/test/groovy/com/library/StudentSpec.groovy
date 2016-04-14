@@ -24,7 +24,7 @@ def student=new Student(name:'Saiba Javed',
 
 			studentid:'06sjaved',
 
-			course:'Hotel Management')
+			course:'Hotel Management').save()
 
 then:"The toString method will merge them together."
 

@@ -28,7 +28,7 @@ tutor()
 
 department()
 
-description()
+description maxSize:10000
 
     }
 }
